@@ -1,12 +1,4 @@
-(function (root, factory) {
-    if (typeof module !== "undefined" && module.exports) {
-        module.exports = factory(root);
-    } else if (typeof define === "function" && define.amd) {
-        define(factory(root));
-    } else {
-        root.Waveform = factory(root);
-    }
-})(this, function (window, undefined) {
+(function () {
 
   /**
    * Waveform.js is available to use under the MIT license
@@ -19,7 +11,7 @@
   var JSONP, Waveform,
     __bind = function(fn, me){ return function(){ return fn.apply(me, arguments); }; };
 
-  Waveform = (function() {
+  window.Waveform = (function() {
 
     Waveform.name = "Waveform";
 
@@ -271,6 +263,4 @@
       init: setDefaults
     };
   })();
-
-  return Waveform;
-});
+}).call(this);
