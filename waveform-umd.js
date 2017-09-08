@@ -30,7 +30,7 @@
         if (this.container) {
           this.canvas = this.createCanvas(this.container, options.width || this.container.clientWidth, options.height || this.container.clientHeight);
         } else {
-          throw "Either canvas or container option must be passed";
+          //throw "Either canvas or container option must be passed";
         }
       }
       this.patchCanvasForIE(this.canvas);
