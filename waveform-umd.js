@@ -12,9 +12,7 @@
     __bind = function(fn, me){ return function(){ return fn.apply(me, arguments); }; };
 
   window.Waveform = (function() {
-
     Waveform.name = "Waveform";
-
     function Waveform(options) {
       this.redraw = __bind(this.redraw, this);
       this.container = options.container;

@@ -1,6 +1,6 @@
 {
   "name": "waveform.js",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Waveform.js makes drawing SoundCloud waveforms simple and lets you style and color them the way you want it.",
   "main": "waveform-umd.js",
   "scripts": {
